@@ -1,8 +1,16 @@
 import React from 'react'
+import styles from './App.module.css';
+import MainContent from './components/MainContent';
+import NowPlaying from './components/NowPlaying';
 
 const App = () => {
   return (
-    <div><h1>Hello I am Nayan </h1></div>
+    <div className={styles.wrapper}>
+      <div className={styles.mainLayout}>
+        <MainContent  />
+        <NowPlaying />
+      </div>
+    </div>
   )
 }
 
