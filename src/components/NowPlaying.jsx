@@ -22,7 +22,15 @@ const NowPlaying = ({ song }) => {
           <Share size={20} className={styles.iconHover} />
           <PlusCircle size={20} className={styles.iconHover} />
         </div>
+        <div className={styles.aboutArtist}>
+        <div className={styles.artistCard}>
+          <div className={styles.banner} style={{ backgroundImage: url('https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=800')}}>
+            <h3 className={styles.bannerTitle}>About the artist</h3>
+          </div>
+        </div>
+        </div>
       </div>
+
     </aside>
   )
 }
