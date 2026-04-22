@@ -6,10 +6,12 @@ import NowPlaying from './components/NowPlaying';
 const App = () => {
   return (
     <div className={styles.wrapper}>
+      <TopNav />
       <div className={styles.mainLayout}>
         <MainContent  />
         <NowPlaying />
       </div>
+      <Player />
     </div>
   )
 }
