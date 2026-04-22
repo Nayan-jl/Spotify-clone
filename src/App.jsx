@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import styles from './App.module.css';
+import TopNav from './components/TopNav';
+import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import NowPlaying from './components/NowPlaying';
+import Player from './components/Player';
 
 const App = () => {
   return (
