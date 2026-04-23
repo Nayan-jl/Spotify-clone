@@ -31,6 +31,15 @@ const MainContent = ({ onSelect }) => {
         <button className={styles.pill}>Music</button>
         <button className={styles.pill}>Podcasts</button>
       </div>
+        <div className={styles.quickGrid}>
+        {topItems.map((item, i) => (
+          <div key={i} className={styles.quickCard}>
+            <img src={item.img} alt={item.name} style={item.isBlue ? { background: 'linear-gradient(135deg, #450af5, #c4efd9)' } : {}} />
+            <span>{item.name}</span>
+            <div className={styles.playIcon}>▶</div>
+          </div>
+        ))}
+      </div>
       </main>
     </div>
   )
