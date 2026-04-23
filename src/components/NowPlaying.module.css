@@ -45,3 +45,26 @@
   align-items: flex-start;
   margin-top: 4px;
 }
+.songMeta {
+  flex: 1;
+  padding-right: 12px;
+}
+
+.songTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.artistName {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.songActions {
+  display: flex;
+  gap: 16px;
+  color: #b3b3b3;
+  padding-top: 4px;
+}
