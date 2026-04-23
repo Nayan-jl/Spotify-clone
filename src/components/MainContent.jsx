@@ -54,6 +54,20 @@ const MainContent = ({ onSelect }) => {
           </div>
         ))}
       </div>
+      <div className={styles.sectionHeaderRow}>
+        <h2 className={styles.sectionTitle}>Albums featuring songs you like</h2>
+        <span className={styles.showAll}>Show all</span>
+      </div>
+      <div className={styles.mainGrid}>
+        {albums.map((item, i) => (
+          <div key={i} className={styles.musicCard}>
+            <img src={item.img} alt={item.title} />
+            <div className={styles.playIconCard}>▶</div>
+            <p className={styles.cardTitle}>{item.title}</p>
+            <p className={styles.cardDesc}>{item.desc}</p>
+          </div>
+        ))}
+      </div>
       </main>
     </div>
   )
