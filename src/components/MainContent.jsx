@@ -24,7 +24,15 @@ const MainContent = ({ onSelect }) => {
     { title: "Calvin Harris", desc: "Various Artists", img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=200" }
   ];
   return (
-    <div></div>
+    <div>
+      <main className={styles.container}>
+        <div className={styles.filterHeader}>
+        <button className={styles.activePill}>All</button>
+        <button className={styles.pill}>Music</button>
+        <button className={styles.pill}>Podcasts</button>
+      </div>
+      </main>
+    </div>
   )
 }
 
