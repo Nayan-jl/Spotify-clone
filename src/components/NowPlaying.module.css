@@ -115,3 +115,33 @@
   font-size: 16px;
   margin-bottom: 8px;
 }
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.followBtn {
+  background: transparent;
+  color: white;
+  border: 1px solid #878787;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.followBtn:hover {
+  border-color: white;
+  transform: scale(1.04);
+}
+
+.bio {
+  font-size: 14px;
+  color: #b3b3b3;
+  line-height: 1.4;
+}
