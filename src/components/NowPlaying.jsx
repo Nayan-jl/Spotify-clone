@@ -27,10 +27,20 @@ const NowPlaying = ({ song }) => {
           <div className={styles.banner} style={{ backgroundImage: url('https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=800')}}>
             <h3 className={styles.bannerTitle}>About the artist</h3>
           </div>
+          <div className={styles.artistDetails}>
+            <p className={styles.artistNameSmall}>{song.artist}</p>
+            <div className={styles.statsRow}>
+              <span>12,458,930 monthly listeners</span>
+              <button className={styles.followBtn}>Follow</button>
+            </div>
+            <p className={styles.bio}>
+              Known for high-energy sets and melodic rhythms, {song.artist} continues to 
+              define the genre with every new release.
+            </p>
+          </div>
         </div>
         </div>
       </div>
-
     </aside>
   )
 }
