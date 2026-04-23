@@ -1,9 +1,19 @@
 import React from 'react'
 import styles from './MainContent.module.css';
 
-const MainContent = () => {
+const MainContent = ({ onSelect }) => {
+  const topItems = [
+    { name: "Liked Songs", img: "https://misc.scdn.co/liked-songs/liked-songs-64.png", isBlue: true },
+    { name: "Techno", img: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?w=100" },
+    { name: "Arz Kiya Hai | Coke Studio...", img: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100" },
+    { name: "GYM", img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=100" },
+    { name: "After Hours", img: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=100" },
+    { name: ".", img: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=100" },
+    { name: "Intentions", img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=100" },
+    { name: "Justin Bieber", img: "https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=100" }
+  ];
   return (
-    <div>MainContent</div>
+    <div></div>
   )
 }
 
