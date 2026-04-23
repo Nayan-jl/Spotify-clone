@@ -27,3 +27,21 @@
 .icon:hover {
   color: white;
 }
+.mainCover {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.playlistTitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.songMetaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4px;
+}
