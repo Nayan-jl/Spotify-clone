@@ -68,3 +68,23 @@
   color: #b3b3b3;
   padding-top: 4px;
 }
+.iconHover {
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.iconHover:hover {
+  color: white;
+}
+
+.artistCard {
+  background: #242424;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.artistCard:hover {
+  background: #333;
+}
