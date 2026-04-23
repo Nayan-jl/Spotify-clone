@@ -70,7 +70,7 @@ const MainContent = ({ onSelect }) => {
       </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default MainContent
