@@ -14,9 +14,9 @@ const Sidebar = () => {
     { name: "Feel good !!", desc: "Playlist • Nayan Jyoti Lekharu", img: "https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=50" },
     { name: "Her <3", desc: "Playlist • Nayan Jyoti Lekharu", img: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=50" },
   ];
-   return (
+    return (
     <aside className={styles.sidebar}>
-        <div className={styles.libraryBox}>
+      <div className={styles.libraryBox}>
         <div className={styles.libraryHeader}>
           <div className={styles.navItem}>
             <Library size={24} /> 
@@ -27,7 +27,32 @@ const Sidebar = () => {
             <ArrowRight size={20} className={styles.iconHover} />
           </div>
         </div>
+
+        <div className={styles.pills}>
+          <span className={styles.pill}>Playlists</span>
+          <span className={styles.pill}>Albums</span>
         </div>
+
+        <div className={styles.searchRow}>
+          <Search size={16} className={styles.searchIcon} />
+          <div className={styles.recents}>
+            <span>Recents</span>
+            <List size={16} />
+          </div>
+        </div>
+
+        <div className={styles.playlistList}>
+          {playlists.map((pl, i) => (
+            <div key={i} className={styles.playlistItem}>
+              <img src={pl.img} alt={pl.name} className={styles.plImage} style={pl.isBlue ? { background: 'linear-gradient(135deg, #450af5, #c4efd9)' } : {}} />
+              <div className={styles.plInfo}>
+                <p className={styles.plName} style={pl.isBlue ? { color: '#1ed760' } : {}}>{pl.name}</p>
+                <p className={styles.plDesc}>{pl.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </aside>
   );
 };
