@@ -28,3 +28,8 @@
   justify-content: center;
   color: black;
 }
+
+.progressRow { width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 4px;}
+.time { font-size: 11px; color: #b3b3b3; width: 30px; text-align: center; }
+.bar { flex: 1; height: 4px; background: #4f4f4f; border-radius: 2px; }
+.fill { width: 0%; height: 100%; background: white; border-radius: 2px; }
