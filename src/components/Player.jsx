@@ -30,6 +30,18 @@ const Player = ({ song, isPlaying, onTogglePlay }) => {
           <span className={styles.time}>4:05</span>
         </div>
       </div>
+      <div className={styles.extraControls}>
+        <MonitorPlay size={16} className={styles.subIconExtra} />
+        <Mic2 size={16} className={styles.subIconExtra} />
+        <ListMusic size={16} className={styles.subIconExtra} />
+        <div className={styles.volumeGroup}>
+          <Volume2 size={16} className={styles.subIconExtra} />
+          <div className={styles.volBar}>
+             <div className={styles.volFill}></div>
+          </div>
+        </div>
+        <Maximize2 size={16} className={styles.subIconExtra} />
+      </div>
 
      </footer>
   )
