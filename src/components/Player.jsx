@@ -13,7 +13,24 @@ const Player = ({ song, isPlaying, onTogglePlay }) => {
         </div>
         <PlusCircle size={16} className={styles.songActionBtn} />
       </div>
-      
+
+      <div className={styles.controls}>
+        <div className={styles.buttons}>
+          <Shuffle size={18} className={styles.subIcon} />
+          <SkipBack size={24} fill="currentColor" />
+          <div className={styles.playBtn} onClick={onTogglePlay}>
+            {isPlaying ? <Pause size={20} fill="black" /> : <Play size={20} fill="black" />}
+          </div>
+          <SkipForward size={24} fill="currentColor" />
+          <Repeat size={18} className={styles.subIcon} />
+        </div>
+        <div className={styles.progressRow}>
+          <span className={styles.time}>0:00</span>
+          <div className={styles.bar}><div className={styles.fill}></div></div>
+          <span className={styles.time}>4:05</span>
+        </div>
+      </div>
+
      </footer>
   )
 }
