@@ -5,3 +5,11 @@
   justify-content: space-between;
   padding: 0 16px;
 }
+
+.songInfo { width: 30%; display: flex; align-items: center; gap: 12px; }
+.thumb { width: 56px; height: 56px; background: #333; border-radius: 4px; object-fit: cover; }
+.songTextInfo { display: flex; flex-direction: column; }
+.songName { font-size: 14px; font-weight: 500; }
+.artist { font-size: 11px; color: #b3b3b3; }
+.songActionBtn { color: #b3b3b3; margin-left: 8px; cursor: pointer; transition: color 0.2s;}
+.songActionBtn:hover { color: #fff; }
