@@ -24,7 +24,7 @@ const NowPlaying = ({ song }) => {
         </div>
         <div className={styles.aboutArtist}>
         <div className={styles.artistCard}>
-          <div className={styles.banner} style={{ backgroundImage: url('https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=800')}}>
+          <div className={styles.banner} style={{ backgroundImage: `url('https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=800')`}}>
             <h3 className={styles.bannerTitle}>About the artist</h3>
           </div>
           <div className={styles.artistDetails}>
