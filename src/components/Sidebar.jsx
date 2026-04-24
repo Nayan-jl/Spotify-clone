@@ -14,5 +14,22 @@ const Sidebar = () => {
     { name: "Feel good !!", desc: "Playlist • Nayan Jyoti Lekharu", img: "https://images.unsplash.com/photo-1549834125-82d3c48159a3?w=50" },
     { name: "Her <3", desc: "Playlist • Nayan Jyoti Lekharu", img: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=50" },
   ];
-  
-}
+   return (
+    <aside className={styles.sidebar}>
+        <div className={styles.libraryBox}>
+        <div className={styles.libraryHeader}>
+          <div className={styles.navItem}>
+            <Library size={24} /> 
+            <span>Your Library</span>
+          </div>
+          <div className={styles.headerActions}>
+            <Plus size={20} className={styles.iconHover} />
+            <ArrowRight size={20} className={styles.iconHover} />
+          </div>
+        </div>
+        </div>
+    </aside>
+  );
+};
+
+export default Sidebar;
