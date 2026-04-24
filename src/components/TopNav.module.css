@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  height: 64px;
+}
+
+.leftSection { width: 280px; } 
+
+.centerSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.homeBtn {
+  background: #242424;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.homeBtn:hover {
+  transform: scale(1.04);
+}
+
+.searchBar {
+  background: #242424;
+  border-radius: 24px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  gap: 12px;
+  height: 48px;
+}
+
+.searchBar:hover, .searchBar:focus-within {
+  background: #2a2a2a;
+  border: 1px solid #333;
+}
+
+.searchBar input {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+
+.rightSection {
+  width: 340px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.installBtn {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.installBtn:hover {
+  transform: scale(1.04);
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: #444;
+}
+
+.icon, .navIcon {
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.icon:hover, .navIcon:hover {
+  color: white;
+}
+
+.profile {
+  cursor: pointer;
+}
+
+/* Added Spotify Logo styles */
+.spotifyLogo {
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
